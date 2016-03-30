@@ -1,0 +1,62 @@
+Future Technology Devices International Limited (c) 2007-2010, All Rights Reserved
+
+
+CPU_CORE =   VC2, CPU_RAM_SIZE= 16 KB, CPU_ROM_SIZE=256 KB
+
+Linker Version  = V1.0.1 Loader Version =  V1.0.1
+Tue Mar 29 17:13:34 2016
+
+
+=================================================================================================================
+
+SEGMENT_MAP    
+=================================================================================================================
+
+Start Address                  Segment Name                   Segment Size
+=================================================================================================================
+
+0003c0 .text                          000000de27
+00e1e7 .dataFlash                     00000000a0
+000000 .dataRAM                       00000000a0
+0000a0 .bss                           000000014f
+0001ef .HeapRAM                       0000003a10
+
+=================================================================================================================
+
+SYMBOL_TABLE   
+=================================================================================================================
+
+SYM ADDRESS PUBLIC SYM NAME                SYM TYPE   MEM TYPE FILE NAME            SYM SIZE  
+NOTE:L=LABEL F=FUNCTION 0=FLASH and 1=RAM
+=================================================================================================================
+
+00441 main                           F              0 Project_1.obj        001b8
+005f9 usbhost_connect_state          F              0 Project_1.obj        000b6
+006af open_drivers                   F              0 Project_1.obj        0002f
+006de attach_drivers                 F              0 Project_1.obj        00001
+006df close_drivers                  F              0 Project_1.obj        00015
+006f4 firmware                       F              0 Project_1.obj        006bd
+00db1 thread_1                       F              0 Project_1.obj        0003b
+00dec thread_2                       F              0 Project_1.obj        00038
+0001e as                             L              1 Project_1.obj        00001
+0001f ram                            L              1 Project_1.obj        00002
+000a0 hUSBHOSTGENERIC                L              1 Project_1.obj        00002
+000a2 hUART                          L              1 Project_1.obj        00002
+000a4 hUSBHOST_1                     L              1 Project_1.obj        00002
+000a6 hUSBHOST_2                     L              1 Project_1.obj        00002
+000a8 tcbTHREAD_1                    L              1 Project_1.obj        00002
+000aa tcbTHREAD_2                    L              1 Project_1.obj        00002
+000ac tcbFIRMWARE                    L              1 Project_1.obj        00002
+000ae hGPIO_PORT_A                   L              1 Project_1.obj        00002
+0ccd8 iomux_setup                    F              0 Project_1_iomux.obj  00092
+0cd6a usbhostGeneric_init            F              0 USBHostGenericDrv.obj 0015f
+0cec9 usbhostGeneric_open            F              0 USBHostGenericDrv.obj 00001
+0ceca usbhostGeneric_close           F              0 USBHostGenericDrv.obj 00001
+0cecb usbhostGeneric_read            F              0 USBHostGenericDrv.obj 00274
+0d13f usbhostGeneric_write           F              0 USBHostGenericDrv.obj 00274
+0d3b3 usbhostGeneric_ioctl_setup     F              0 USBHostGenericDrv.obj 002a6
+0d659 usbhostGeneric_ioctl_enable    F              0 USBHostGenericDrv.obj 0054a
+0dba3 usbhostGeneric_attach          F              0 USBHostGenericDrv.obj 004b2
+0e055 usbhostGeneric_detach          F              0 USBHostGenericDrv.obj 000b7
+0e10c usbhostGeneric_ioctl           F              0 USBHostGenericDrv.obj 000db
+001d6 usbhostGeneric_cb              L              1 USBHostGenericDrv.obj 00019
